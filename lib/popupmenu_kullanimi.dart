@@ -18,7 +18,7 @@ class _PopmenuKullanimiState extends State<PopmenuKullanimi> {
         onSelected: (String sehir) {
           print('seçilen sehir : $sehir');
           setState(() {
-            _secilenSehir = sehir; // seçilen şehiri değiştir anlamına geliyor.
+            _secilenSehir = sehir; // seçilen şehiri değiştir anlamına gelir.
           });
         },
         //child: Text(_secilenSehir),
@@ -37,8 +37,9 @@ class _PopmenuKullanimiState extends State<PopmenuKullanimi> {
               value: 'Van',
             ),
           ]; */
-          return renkler //renkler listesini map methodu ile pop menüsüne dönüştürücem daha sonra ise bunu 
-              .map( // yzadırmak için listeye dönüştürüyorum.
+          return renkler //renkler listesini map methodu ile pop menüsüne dönüştürücem daha sonra ise bunu
+              .map(
+                // yzadırmak için listeye dönüştürüyorum.
                 (String renk) => PopupMenuItem(
                   child: Text(renk),
                   value: renk,
